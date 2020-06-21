@@ -1,0 +1,80 @@
+html {
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size:62.5%;
+}
+
+.club {
+    height: 100vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    &__top{
+
+        width: 100%;
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+        p {
+            padding: 0;
+            margin: 0;
+ 
+            &:first-of-type {
+
+            }
+            &:last-of-type{
+
+            }
+        }
+    }
+    &__middle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20rem;
+    }
+    &__bottom{
+        width: 100%;
+        
+        p {
+            padding: 0;
+            margin: 0;
+            transform: scale(-1, -1);
+            font-size: 100%;
+            &:first-of-type {
+
+            }
+            &:last-of-type{
+    
+            }
+        }
+        
+        font-size: 2.2rem;
+        margin-right: 1.5rem;
+        margin-bottom: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+    }
+
+      
+  }
+
+  @media only screen and (max-height:360px) {
+
+    .club {
+        &__middle {
+            font-size: 10rem;
+        }
+    }
+  } 
